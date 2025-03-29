@@ -40,8 +40,6 @@ type CepResponse struct {
 }
 
 func buscaBrasilAPI(cep string) (*CepResponse, error) {
-	// Adiciona um delay artificial de 500ms para simular uma resposta mais lenta
-	time.Sleep(time.Millisecond * 500)
 
 	client := &http.Client{
 		Timeout: time.Second * 1,
